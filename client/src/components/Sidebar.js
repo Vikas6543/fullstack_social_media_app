@@ -42,14 +42,6 @@ const Sidebar = () => {
         {/* profile name */}
         <p className='text-center pt-5 text-2xl font-medium'>
           {loggedInUserDetails?.name}
-          <div className='relative'>
-            {loggedInUserDetails?.role === 'admin' && (
-              <i
-                className='fas fa-check-circle text-blue-500 absolute -top-10 text-xl'
-                style={{ right: '104px' }}
-              ></i>
-            )}
-          </div>
         </p>
 
         {/* post, following, followers */}

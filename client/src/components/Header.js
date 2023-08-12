@@ -401,16 +401,6 @@ const Header = ({ profileDetails }) => {
                     {/* profile name */}
                     <p className='text-center pt-5 text-xl font-medium'>
                       {loggedInUserDetails?.name}
-                      <div className='relative'>
-                        {loggedInUserDetails?.role === 'admin' && (
-                          <Tooltip title='Admin'>
-                            <i
-                              className='fas fa-check-circle text-blue-500 absolute -top-10 text-lg'
-                              style={{ right: '47px' }}
-                            ></i>
-                          </Tooltip>
-                        )}
-                      </div>
                     </p>
 
                     {/* post, following, followers */}

@@ -33,18 +33,6 @@ const FriendsList = ({
               </p>
             </section>
           </div>
-
-          <div className='md:mr-5'>
-            {role === 'admin' && (
-              <button
-                style={{ fontWeight: '500' }}
-                className='text-sm border bg-red-500 text-white px-3 md:py-2 py-1 rounded cursor-pointer hover:bg-red-600'
-                onClick={() => removeFriendHandler(user._id)}
-              >
-                Remove
-              </button>
-            )}
-          </div>
         </div>
       ))}
     </>
