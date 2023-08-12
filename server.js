@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const cls = require('cli-color');
+const path = require('path');
 
 // .env configuaration
 dotenv.config();
