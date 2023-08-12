@@ -17,7 +17,7 @@ axios.interceptors.response.use(
   },
   (error) => {
     if (error.response.status === 404 || error.response.status === 401) {
-      window.location.href = '/login';
+      window.location.href = 'https://social-media-qgzn.onrender.com/login';
       store.dispatch({ type: CLEAR_AUTH });
       store.dispatch({ type: CLEAR_PROFILE });
     }
