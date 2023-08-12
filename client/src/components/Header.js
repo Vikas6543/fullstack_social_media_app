@@ -88,7 +88,7 @@ const Header = ({ profileDetails }) => {
   const getRecentPosts = async () => {
     try {
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/post'
+        'https://social-media-qgzn.onrender.com/post'
       );
       if (response) {
         return dispatch({ type: RECENT_POSTS, payload: response?.data.posts });
@@ -102,7 +102,7 @@ const Header = ({ profileDetails }) => {
   const getAllUsers = async () => {
     try {
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/allProfiles'
+        'https://social-media-qgzn.onrender.com/user/allProfiles'
       );
       if (response) {
         setAllUsers(response?.data?.users);

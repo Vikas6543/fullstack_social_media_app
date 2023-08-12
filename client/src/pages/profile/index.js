@@ -57,7 +57,7 @@ const Profile = () => {
   const getProfileDetails = async () => {
     try {
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/profile'
+        'https://social-media-qgzn.onrender.com/user/profile'
       );
       dispatch({ type: PROFILE_POSTS, payload: response?.data.user });
       dispatch({
@@ -73,7 +73,7 @@ const Profile = () => {
   const getFollowersList = async () => {
     try {
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/followers'
+        'https://social-media-qgzn.onrender.com/user/followers'
       );
       setFollowersList(response?.data.followers);
     } catch (error) {
@@ -85,7 +85,7 @@ const Profile = () => {
   const getFollowingList = async () => {
     try {
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/following'
+        'https://social-media-qgzn.onrender.com/user/following'
       );
       setFollowingList(response?.data.followers);
     } catch (error) {
@@ -97,7 +97,7 @@ const Profile = () => {
     try {
       setIsFollowersLoading(true);
       await axios.put(
-        `https://full-stack-social-media-5smd.onrender.com/user/follow/${id}`
+        `https://social-media-qgzn.onrender.com/user/follow/${id}`
       );
       setIsFollowersLoading(false);
       getProfileDetails();
@@ -112,7 +112,7 @@ const Profile = () => {
   const removeFollower = async (id) => {
     try {
       await axios.put(
-        `https://full-stack-social-media-5smd.onrender.com/user/removeFollower/${id}`
+        `https://social-media-qgzn.onrender.com/user/removeFollower/${id}`
       );
       getProfileDetails();
       getFollowersList();

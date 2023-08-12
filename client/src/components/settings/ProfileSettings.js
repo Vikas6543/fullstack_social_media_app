@@ -21,7 +21,7 @@ const ProfileSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/profile'
+        'https://social-media-qgzn.onrender.com/user/profile'
       );
       setIsLoading(false);
       if (response?.data?.user?.name) {
@@ -44,7 +44,7 @@ const ProfileSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.put(
-        'https://full-stack-social-media-5smd.onrender.com/user/profileUpdate',
+        'https://social-media-qgzn.onrender.com/user/profileUpdate',
         {
           name,
           email,

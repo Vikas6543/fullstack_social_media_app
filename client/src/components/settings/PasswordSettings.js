@@ -21,7 +21,7 @@ const PasswordSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.put(
-        'https://full-stack-social-media-5smd.onrender.com/user/updatePassword',
+        'https://social-media-qgzn.onrender.com/user/updatePassword',
         {
           oldPassword,
           newPassword,

@@ -30,7 +30,7 @@ const ProfileDetails = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        `https://full-stack-social-media-5smd.onrender.com/user/profile/${id}`
+        `https://social-media-qgzn.onrender.com/user/profile/${id}`
       );
       if (response) {
         setIsLoading(false);
@@ -50,7 +50,7 @@ const ProfileDetails = () => {
     try {
       setFollowLoading(true);
       const response = await axios.get(
-        `https://full-stack-social-media-5smd.onrender.com/user/profile/${id}`
+        `https://social-media-qgzn.onrender.com/user/profile/${id}`
       );
       setFollowLoading(false);
       if (response) {
@@ -71,7 +71,7 @@ const ProfileDetails = () => {
     try {
       setFollowLoading(true);
       const response = await axios.get(
-        'https://full-stack-social-media-5smd.onrender.com/user/profile'
+        'https://social-media-qgzn.onrender.com/user/profile'
       );
       setFollowLoading(false);
       dispatch({
@@ -89,7 +89,7 @@ const ProfileDetails = () => {
     try {
       setFollowLoading(true);
       const response = await axios.put(
-        `https://full-stack-social-media-5smd.onrender.com/user/follow/${id}`
+        `https://social-media-qgzn.onrender.com/user/follow/${id}`
       );
       setFollowLoading(false);
       if (response) {

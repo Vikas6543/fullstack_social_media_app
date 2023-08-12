@@ -13,7 +13,7 @@ const ForgotPassword = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        'https://full-stack-social-media-5smd.onrender.com/user/forgotPassword',
+        'https://social-media-qgzn.onrender.com/user/forgotPassword',
         {
           email,
         }

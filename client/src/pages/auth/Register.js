@@ -49,7 +49,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        'https://full-stack-social-media-5smd.onrender.com/user/register',
+        'https://social-media-qgzn.onrender.com/user/register',
         data
       );
 

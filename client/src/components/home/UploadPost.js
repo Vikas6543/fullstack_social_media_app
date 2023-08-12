@@ -52,7 +52,7 @@ const UploadPost = ({ handleClose, onLoadingChange }) => {
   const uploadHandler = async () => {
     try {
       const response = await axios.post(
-        'https://full-stack-social-media-5smd.onrender.com/post',
+        'https://social-media-qgzn.onrender.com/post',
         {
           imageUrl,
         }
@@ -61,7 +61,7 @@ const UploadPost = ({ handleClose, onLoadingChange }) => {
         handleClose();
         try {
           const response = await axios.get(
-            'https://full-stack-social-media-5smd.onrender.com/post'
+            'https://social-media-qgzn.onrender.com/post'
           );
           if (response) {
             dispatch({ type: RECENT_POSTS, payload: response?.data.posts });

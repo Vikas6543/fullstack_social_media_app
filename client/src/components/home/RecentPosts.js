@@ -88,7 +88,7 @@ const RecentPosts = ({ getRecentPosts, isLoading }) => {
 
     try {
       const response = await axios.put(
-        `https://full-stack-social-media-5smd.onrender.com/post/like/${id}`
+        `https://social-media-qgzn.onrender.com/post/like/${id}`
       );
       if (!response) {
         throw new Error('Failed to update like count');
@@ -103,7 +103,7 @@ const RecentPosts = ({ getRecentPosts, isLoading }) => {
     try {
       setLoading(true);
       const response = await axios.delete(
-        `https://full-stack-social-media-5smd.onrender.com/post/${deletePostId}`
+        `https://social-media-qgzn.onrender.com/post/${deletePostId}`
       );
       setLoading(false);
       if (response) {

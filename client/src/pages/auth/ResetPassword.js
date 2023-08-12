@@ -43,7 +43,7 @@ const ResetPassword = () => {
     try {
       setIsLoading(true);
       const response = await axios.post(
-        'https://full-stack-social-media-5smd.onrender.com/user/resetPassword',
+        'https://social-media-qgzn.onrender.com/user/resetPassword',
         {
           resetPassword: NewPassword,
           token,
