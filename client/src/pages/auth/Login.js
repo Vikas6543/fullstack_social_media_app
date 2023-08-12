@@ -34,7 +34,7 @@ const Login = () => {
       const data = { email, password };
 
       const response = await Axios.post(
-        'https://mern-stack-app-api-pc1h.onrender.com/user/login',
+        'https://full-stack-social-media-5smd.onrender.com/user/login',
         data
       );
 

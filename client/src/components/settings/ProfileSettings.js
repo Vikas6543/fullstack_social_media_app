@@ -21,7 +21,7 @@ const ProfileSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        'https://mern-stack-app-api-pc1h.onrender.com/user/profile'
+        'https://full-stack-social-media-5smd.onrender.com/user/profile'
       );
       setIsLoading(false);
       if (response?.data?.user?.name) {
@@ -44,7 +44,7 @@ const ProfileSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.put(
-        'https://mern-stack-app-api-pc1h.onrender.com/user/profileUpdate',
+        'https://full-stack-social-media-5smd.onrender.com/user/profileUpdate',
         {
           name,
           email,

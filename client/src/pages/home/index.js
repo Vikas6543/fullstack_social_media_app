@@ -20,7 +20,7 @@ const Home = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        'https://mern-stack-app-api-pc1h.onrender.com/post'
+        'https://full-stack-social-media-5smd.onrender.com/post'
       );
       setIsLoading(false);
       if (response) {
@@ -36,7 +36,7 @@ const Home = () => {
   const getUsersProfile = async () => {
     try {
       const response = await axios.get(
-        'https://mern-stack-app-api-pc1h.onrender.com/user/allProfiles'
+        'https://full-stack-social-media-5smd.onrender.com/user/allProfiles'
       );
       dispatch({ type: ALL_USERS_PROFILE, payload: response?.data.users });
     } catch (error) {

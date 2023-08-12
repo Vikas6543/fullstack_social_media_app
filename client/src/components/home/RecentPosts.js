@@ -88,7 +88,7 @@ const RecentPosts = ({ getRecentPosts, isLoading }) => {
 
     try {
       const response = await axios.put(
-        `https://mern-stack-app-api-pc1h.onrender.com/post/like/${id}`
+        `https://full-stack-social-media-5smd.onrender.com/post/like/${id}`
       );
       if (!response) {
         throw new Error('Failed to update like count');
@@ -103,7 +103,7 @@ const RecentPosts = ({ getRecentPosts, isLoading }) => {
     try {
       setLoading(true);
       const response = await axios.delete(
-        `https://mern-stack-app-api-pc1h.onrender.com/post/${deletePostId}`
+        `https://full-stack-social-media-5smd.onrender.com/post/${deletePostId}`
       );
       setLoading(false);
       if (response) {

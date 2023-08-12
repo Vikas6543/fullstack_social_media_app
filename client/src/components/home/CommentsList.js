@@ -22,7 +22,7 @@ const CommentsList = ({ recentPosts, commentPostId }) => {
     try {
       setIsLoading(true);
       const response = await axios.put(
-        `https://mern-stack-app-api-pc1h.onrender.com/post/comment/${commentPostId}`,
+        `https://full-stack-social-media-5smd.onrender.com/post/comment/${commentPostId}`,
         {
           text: comment,
         }
@@ -32,7 +32,7 @@ const CommentsList = ({ recentPosts, commentPostId }) => {
         setComment('');
         try {
           const response = await axios.get(
-            'https://mern-stack-app-api-pc1h.onrender.com/post'
+            'https://full-stack-social-media-5smd.onrender.com/post'
           );
           if (response) {
             dispatch({ type: RECENT_POSTS, payload: response?.data.posts });

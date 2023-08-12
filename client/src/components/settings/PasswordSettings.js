@@ -21,7 +21,7 @@ const PasswordSettings = () => {
     try {
       setIsLoading(true);
       const response = await axios.put(
-        'https://mern-stack-app-api-pc1h.onrender.com/user/updatePassword',
+        'https://full-stack-social-media-5smd.onrender.com/user/updatePassword',
         {
           oldPassword,
           newPassword,
